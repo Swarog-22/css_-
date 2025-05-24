@@ -1,0 +1,34 @@
+/* теговий селектор */
+body {
+background: #bfdc69;
+color: chocolate;
+}
+a {
+    /* властивості */
+    color: black;
+}
+
+div {
+background-color: rgb(69, 14, 232);
+
+}
+
+/* універсальний селектор */
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* селектор класу */
+.first_block {
+    background-color: blueviolet;
+}
+.text_block {
+    padding: 50px;
+}
+/* селектор ідентифікатора */
+
+#ThirdBlock {
+    color: rgb(17, 232, 10);
+}
