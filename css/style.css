@@ -9,7 +9,7 @@ a {
 }
 
 div {
-background-color: rgb(69, 14, 232);
+background-color: rgb(133, 114, 193);
 
 }
 
@@ -27,8 +27,71 @@ background-color: rgb(69, 14, 232);
 .text_block {
     padding: 50px;
 }
-/* селектор ідентифікатора */
 
+/* селектор ідентифікатора */
 #ThirdBlock {
     color: rgb(17, 232, 10);
+}
+
+/* селектор групи */
+h2, h3, h4 {
+    font-size: 24px;
+    font-style: italic;
+}
+
+#ThirdBlock,
+.text_block {
+    width: 50%;
+}
+
+/* Селектор нащадка */
+.parent .child-1 {
+    height: 50px;
+    background-color: darkgreen;
+}
+.parent .text_block {
+    padding: 100px;
+    font-size: 24px;
+}
+.parent .child-2 .child-2-1 {
+   height: 100px;
+   background-color: darkgray;
+}
+/* Дочірній селектор */
+.parent > p {
+    color: blue;
+}
+/* Сусідній селектор */
+.child-1 + a {
+    color: darkmagenta;
+}
+/* Споріднений селектор */
+.child-1 ~ p {
+    text-transform: uppercase;
+}
+
+/* .first_block + div {
+    text-decoration: underline;
+} */
+
+.text_block ~ div {
+    text-decoration: underline;
+}
+
+.parent a + p {
+    color: brown;
+}
+
+/* Селектор атрибута */
+div[id] {
+    width: 75%;
+}
+
+a[href="#"] {
+    font-size: 32px;
+}
+
+a[href^="https"] {
+    text-decoration: none;
+    font-size: 24px;
 }

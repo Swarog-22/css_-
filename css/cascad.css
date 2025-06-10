@@ -1,0 +1,136 @@
+body {
+   /* властивості, що наслідуються */
+    margin: 0 0 200px;  
+    font-size: 16px;
+    line-height: 1.6;
+    color: #a57287;
+    /* text-decoration: underline; */
+}
+
+h1 {
+    color: coral !important;
+}
+
+div {
+    background: #cecece;
+    margin-bottom: 40px;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:focus {
+    color: red;
+}
+
+.text-block {
+    background-color: beige;
+}
+/* зображення сторили, як блочний елемент, не працюють властивості наслідування для тексту */
+img {
+    display: block;   
+}
+/* збільшення зображення */
+img:hover {
+    transform: scale(1.5);
+}
+
+/* #TextBlock {
+    background-color: burlywood;
+} */
+
+.text-block.second-block {
+    font-size: 24px;
+}
+
+div p {
+    color: darkslateblue;
+}
+
+.text-block p {
+    color: blue;
+}
+
+input:disabled {
+    color: chartreuse;
+}
+
+input:checked {
+    width: 50px;
+    height: 50px;
+}
+
+p:not(.paragraph) {
+    font-style: italic;
+}
+
+/* структурні псевдокласи */
+.list li:first-child {
+    background-color:red;
+}
+.list li:last-child {
+    background-color: aquamarine;
+}
+
+.list li:nth-child(5) {
+background-color: #8a8a8a;
+}
+
+.list li:nth-child(-n+4) {
+    background-color: #cecece;
+}
+
+.list li:nth-child(n+7) {
+background: chartreuse;
+}
+
+.list li:nth-child(odd) {
+    background-color: #10e01b;
+}
+
+.list li:nth-child(even) {
+    background-color: #6c12a3;
+}
+
+.list li:nth-last-child(5) {
+    background-color: #5005f4;
+} 
+
+.list li:nth-child(3n) {
+    background-color: #e80664;
+    color: #fff;
+}
+
+section div {
+    height: 20px;
+background-color: #e80664;
+}
+
+section div:nth-child(4n) {
+height: 50px;
+}
+
+section div p:only-child {
+    color: chocolate;
+}
+
+section p:nth-child(6) {
+    background-color: #0fc00c;
+}
+  section aside:nth-child(9) {
+    height: 30px;
+    background: #272927;
+  }  
+
+  .new_list {
+    margin: 0;
+  }
+
+  .new_list + h2 {
+    margin: 40px 0 30px;
+  }
+
+  ,.new_list li {
+    margin-bottom: 15px;
+  }

@@ -1,0 +1,96 @@
+/* шрифти */
+/* montserrat-200 - cyrillic-ext_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/montserrat-v30-cyrillic-ext_latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-regular - cyrillic-ext_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v30-cyrillic-ext_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-600 - cyrillic-ext_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/montserrat-v30-cyrillic-ext_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat";
+    font-style: italic;
+}
+
+  p {
+    text-align: justify;
+  }
+
+p span {
+  vertical-align: super;
+  color: blue;
+}
+/* домашня вправа */
+h2 {
+  text-align: center;
+  color: blue;
+}
+
+section {
+  margin: 40px;
+  line-height: 24px;
+}
+
+section :first-child {
+background-color: bisque;
+color: blueviolet;
+text-transform: uppercase;
+}
+
+section :nth-child(2) {
+background-color: rgb(196, 255, 209);
+text-indent: 55px;
+text-align: justify;
+}
+
+section :nth-child(3) {
+background-color: rgb(40, 11, 227);
+color: white;
+white-space: pre-line;
+}
+
+section :nth-child(4) {
+background-color: rgb(162, 59, 103);
+word-break: break-all;
+}
+
+section :nth-child(5) {
+background-color: rgb(146, 231, 164);
+word-wrap: break-word;
+}
+
+section :nth-child(6) {
+background-color: rgb(237, 146, 10);
+word-spacing: 5px;
+}
+
+section :last-child {
+background-color: rgb(21, 168, 216);
+letter-spacing: 3px;
+}
+
+
