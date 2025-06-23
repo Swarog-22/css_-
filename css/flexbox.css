@@ -1,0 +1,56 @@
+/* section { */
+    /* display: flex; */
+    /* padding: 10px; */
+    /* background-color: #cecece; */
+/* } */
+/*  */
+/* div { */
+    /* margin: 10px; */
+    /* padding: 50px;  */
+    /* background-color: cornflowerblue; */   
+
+    /* домашнє завдання */
+    .holder {
+        width: 300px;
+        border-style: solid;
+        border-width: 5px ;
+        border-radius: 25px 25px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .item {
+        padding: 20px 0;
+    }
+    
+    .item:first-child {
+        width: 50%;
+        background-color: #de7d06;
+        border-top-left-radius: 20px;
+    }
+
+    .item:last-child {
+        order: 1; 
+        width: 50%;
+        background-color: #bfb007;
+        border-top-right-radius: 20px;
+    }
+
+    .item:nth-child(3) {
+        order: 2;
+        width: 33.333%;
+        background-color: #a710e3;
+    }
+
+    .item:nth-child(2) {
+        order: 3;
+        width: 33.333%;
+        background-color: #1f6ddc; 
+    }
+
+    .item:nth-child(4) {
+       order: 4;
+       width: 33.333%;
+       background-color: darkgreen;
+    }
